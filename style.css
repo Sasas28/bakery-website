@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+.live {
+  background: red; !important
+}
+.header-custom-bg {
+  background: url(/picture/bakery-1868925__480.jpg) no-repeat center center/cover;
+}
+.overlay {
+  background: rgba(0,0,0,0.6);
+}
+.custom-bg-black {
+  background: #000;
+}
+.custom-bg-maroon {
+  background: #733926;
+}
+.custom-bg-grey{
+  background: #647982;
+}
+img {
+  width: 100%;
+}
+
+/*-----------Menu Section------------*/
+.menu-container {
+  display: flex;
+}
+.menu-tab {
+ flex: 1;
+ border-radius: 0;
+}
+.tab-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-item-content {
+    flex-basis: 50%;
+  }
+/*------------ABOUT SECTION-----------*/
+.one {
+  order:1;
+}
+.two {
+ order: 2; 
+}
+#box1 {
+ flex-basis: 50%; 
+}
+#box2 {
+  flex-basis: 50%;
+  flex-direction: column;
+}
+.sched {
+  flex-basis: 50%;
+}
+/*----------CONTACT US-------------*/
+form {
+  justify-content: space-between;
+}
+.box1, .box2 {
+  flex-basis: 48%;
+}
+/*------------FOR MOBILE VIEW--------*/
+
+@media (max-width: 700px) {
+ .header-custom-bg, .overlay {
+   height: 100vh;
+ }
+ .menu-item-content {
+   flex-basis: 100%;
+ } 
+ #box1, #box2 {
+   flex-basis: 100%;
+ }
+ .one {
+  order:2;
+ }
+ .two {
+ order: 1; 
+ }
+.box1, .box2 {
+  flex-basis: 100%;   
+
+}
